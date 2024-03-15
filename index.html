@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img src="imagenes/Logo.png" alt="logoalura" id="logoalura">
+    <main>
+        <section class="zona-encriptacion">
+            <div class="caja-movible">
+                <textarea name="texto" id="texto" cols="40" rows="10" placeholder="Ingrese el texto aqui"></textarea>     
+                <div class="misbotones">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                    <input type="button" onclick="encriptar()" name="botonEncriptar" value="Encriptar" class="boton-encriptar">
+                    <input type="button" onclick="desencriptar()" name="botonDesencriptar" value="Desencriptar" class="boton-desencriptar">
+                </div>
+            </div>  
+        </section><section class="caja-encriptacion">
+            <div id="caja-resultado">
+                <textarea name="resulTexto" id="resulTexto" cols="40" rows="10" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.</textarea>
+                <input type="button" id="boton-copiar" name="boton-copiar" value="Copiar" class="boton-desencriptar">
+            </div>
+
+            <div id="quiero-mover-esto">
+                <img src="imagenes/Muñeco.png" alt="muñeco-encriptador" id="imagen-muñeco">
+                <div class="mensaje-vacio">
+                    <h1>Ningún mensaje fue encontrado</h1>
+                    <p>Ingrese el texto que desees encriptar o desencriptar</p>
+                </div>   
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Henry Leonardo Campos García</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

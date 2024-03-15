@@ -1,0 +1,144 @@
+body{
+    background: #F3F5FC;
+    font-family: "Inter", sans-serif;
+}
+
+#logoalura{
+    position:absolute;
+    width:8em;
+    top: 40px;
+    left:40px;
+}
+
+main{
+    height: 100vh;
+    padding: 2em 4em;
+}
+
+h1{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+p{
+    font-size: 1em;
+}
+
+.zona-encriptacion{
+    vertical-align: top;
+    display: inline-block;  
+    height: 100%;
+    width: calc(100% - 27% - 2.25em*2);    
+}
+
+.caja-movible{
+    position: relative;
+    top:10em;
+    left: 8em;  
+}
+
+.zona-encriptacion textarea{
+    font-size: 2em;
+    background: transparent;
+    border: none;
+    resize: none;
+    margin-bottom: 1em;
+}
+
+.zona-encriptacion textarea::placeholder{
+    font-weight: 400;
+    color: #0A3871;
+}
+
+.zona-encriptacion p{
+    color: #495057;
+    margin:0 0 1em;
+}
+
+.misbotones{
+    position:relative;
+    top:20em;
+}
+
+.zona-encriptacion p:before{
+    content: "🛈 ";
+}
+
+input{
+    padding: 1.5em 8em;
+    border-radius: 1.5em;
+    font-size: 1em;
+    border: 0.1em solid #0A3871;
+    margin: 0 0.5em;
+    cursor: pointer;
+}
+
+input:active{
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 60%),
+      inset 2px 2px 3px rgb(0 0 0 / 60%);
+}
+
+.boton-encriptar{
+    background: #0A3871;
+    color:#E9ECF8;
+}
+
+
+.boton-desencriptar{
+    color:#0A3871;
+    background: #E9ECF8;
+}
+
+
+.caja-encriptacion{
+    background-color: white;
+    display: inline-block;
+    border-radius: 32px;
+    height: 100%;
+    width:27%;
+    text-align: center;
+    padding: 1em 2.25em;
+}
+
+#caja-resultado{
+    display: none;
+}
+
+#resulTexto{
+    font-size: 2em;
+    color: #495057;
+    background: transparent;
+    border: none;
+    resize: none;
+    width: 100%;
+    height:80vh;
+    margin: 1.25em 0;
+}
+
+#quiero-mover-esto{
+    position: relative;
+    top: 12em;
+}
+
+
+.mensaje-vacio{
+    padding: 0px 5em;
+}
+
+#imagen-muñeco{
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+footer{
+    height: 4em;
+    text-align: right;
+    padding: 0 4em 0;
+    margin-top: 2em;
+}
+
+footer p:before{
+    content: "© ";
+}
